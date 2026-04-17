@@ -1,4 +1,4 @@
-[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/你的用户名/你的仓库名)
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/Rude56/tgdrive)
 ## 部署步骤
 
 ### 前置准备（在 Cloudflare Dashboard 完成）
