@@ -24,7 +24,7 @@
 
 在 Cloudflare Dashboard → D1 → 你的数据库 → Console 中执行：
 
-\`\`\`sql
+```sql
 CREATE TABLE IF NOT EXISTS files (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   name TEXT NOT NULL,
@@ -38,4 +38,4 @@ CREATE TABLE IF NOT EXISTS files (
   expires_at TEXT,
   created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
-\`\`\`
+```
