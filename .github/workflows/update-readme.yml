@@ -1,0 +1,20 @@
+name: Update README deploy button
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Replace deploy URL with current repo
+        run: |
+          REPO="${{ github.repository }}"
+          sed -i "s|url=https://github.com/[^)]*|url=https://github.com/${REPO}|g" README.md
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git diff --quiet || (git add README.md && git commit -m "chore: update deploy button URL" && git push)
